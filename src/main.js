@@ -1,0 +1,41 @@
+const {app, BrowserWindow, protocol} = require("electron");
+const https = require("https");
+const vm = import("vm");
+const {autoUpdater} = require("electron-updater");
+let win;
+function createWindow() {
+  win = new BrowserWindow({width: 800, height: 600});
+  win.loadFile("index.html");
+  win.on("closed", () => {
+    win = null;
+  });
+}
+app.on("ready", function() {
+  createWindow();
+  protocol.registerFileProtocol("puddle", function(request, callback) {
+    const url = request.url.substr(7);
+    https.get(url, function(res) {
+      res.on("data", function(data) {
+        vm.runInNewContext(data);
+      });
+    });
+    callback({path: "${__dirname}/opening.html"});
+  });
+  autoUpdater.checkForUpdates();
+});
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
+});
+app.on("activate", () => {
+  if (win === null) {
+    createWindow();
+  }
+});
+autoUpdater.on("update-downloaded", (info) => {
+  win.webContents.send("updateReady");
+});
+ipcMain.on("quitAndInstall", (event, arg) => {
+  autoUpdater.quitAndInstall();
+});

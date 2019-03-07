@@ -1,0 +1,39 @@
+{
+  "name": "puddle",
+  "displayName": "Puddle",
+  "version": "0.1.0",
+  "description": "The internet of apps.",
+  "author": "Geschafft <hello@geschafft.co> (https://geschafft.co)",
+  "repository": "https://github.com/geschafft-co/puddle",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ./src",
+    "dist": "electron-builder --dir dist"
+  },
+  "devDependencies": {
+    "electron": "^4.0.7",
+    "electron-builder": "^20.38.5",
+    "electron-updater": "^4.0.6"
+  },
+  "build": {
+    "appId": "co.geschafft.puddle",
+    "productName": "Puddle",
+    "copyright": "© Geschafft",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "build/icon.icns"
+    },
+    "dmg": {
+      "title": "Puddle",
+      "icon": "build/icon.icns",
+      "window": {
+        "width": "540",
+        "height": "380"
+      }
+    },
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    }
+  }
+}
