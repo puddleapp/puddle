@@ -10,7 +10,7 @@
   "scripts": {
     "start": "electron ./src",
     "dist": "electron-builder build -mw",
-    "ship": "electron-builder build -mw -p always"
+    "ship": "electron-builder build -mw -p always -c electron-builder.yml"
   },
   "devDependencies": {
     "electron": "^4.0.7",
