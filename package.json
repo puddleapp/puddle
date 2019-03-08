@@ -9,7 +9,8 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron ./src",
-    "dist": "electron-builder build -mw"
+    "dist": "electron-builder build -mw",
+    "ship": "electron-builder build -mw -p always"
   },
   "devDependencies": {
     "electron": "^4.0.7",
