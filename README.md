@@ -8,7 +8,7 @@ Puddle is a web browser for apps. Full desktop apps. Available for Windows and M
 ## Get support
 If you need help or want to report a bug, please do not hesitate to get [support](https://github.com/geschafft-co/puddle/issues).
 ## For developers
-A Puddle app consists of a single JavaScript file that can be run on Node.js. To create a functioning app, you may need to use a framework like [Electron](https://electronjs.org/).
+A Puddle app consists of a single JavaScript file that can be run on Node.js. To create a functioning app, you may need to use a framework like [Electron](https://electronjs.org/). This JavaScript file must be hosted publicly in raw JavaScript format.
 ## Submit an app
 Do you own an app? Tell us [here](https://github.com/geschafft-co/puddle/issues/new). If you don't want to add your app to the Puddle library, you can use puddle://https:// or puddle://http:// to link to your app file.
 ## License
