@@ -3,8 +3,6 @@ Puddle is a web browser for apps. Full desktop apps. Available for Windows and M
 
 
 [![Get Started](https://dabuttonfactory.com/button.png?t=Get+Started&f=Roboto-Bold&ts=21&tc=fff&hp=20&vp=8&c=round&bgt=unicolored&bgc=0054ff&shs=4&shc=0700ff&sho=se)](https://github.com/geschafft-co/puddle/releases)
-## Contributors
-- Cedric Kim
 ## Get support
 If you need help or want to report a bug, please do not hesitate to get [support](https://github.com/geschafft-co/puddle/issues).
 ## For developers
