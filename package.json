@@ -8,7 +8,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron ./src",
-    "dist": "electron-builder -mw --dir dist"
+    "dist": "electron-builder build -mw"
   },
   "devDependencies": {
     "electron": "^4.0.7",
