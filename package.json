@@ -5,6 +5,7 @@
   "description": "The internet of apps.",
   "author": "Geschafft <hello@geschafft.co> (https://geschafft.co)",
   "repository": "https://github.com/geschafft-co/puddle",
+  "license": "MIT",
   "main": "src/main.js",
   "scripts": {
     "start": "electron ./src",
