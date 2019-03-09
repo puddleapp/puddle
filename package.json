@@ -2,7 +2,7 @@
   "name": "Puddle",
   "displayName": "Puddle",
   "version": "0.1.0",
-  "description": "The internet of apps.",
+  "description": "A web browser for full desktop apps.",
   "author": "Geschafft <hello@geschafft.co> (https://geschafft.co)",
   "repository": "https://github.com/geschafft-co/puddle",
   "license": "MIT",
@@ -40,6 +40,9 @@
     },
     "nsis": {
       "uninstallDisplayName": "Puddle"
+    },
+    "linux": {
+      "target": "AppImage"
     }
   }
 }
