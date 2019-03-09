@@ -1,0 +1,4 @@
+appId: co.geschafft.puddle
+publish:
+    provider: github
+    token: ENTER GITHUB PERSONAL ACCESS TOKEN HERE
