@@ -1,5 +1,5 @@
 # Puddle
-Puddle is a web browser for apps. Full desktop apps. Available for Windows and Mac.
+Puddle is a web browser for apps. Full desktop apps. Available for Mac, Windows, and Linux.
 
 
 [![Get Started](https://dabuttonfactory.com/button.png?t=Get+Started&f=Roboto-Bold&ts=21&tc=fff&hp=20&vp=8&c=round&bgt=unicolored&bgc=0054ff&shs=4&shc=0700ff&sho=se)](https://github.com/geschafft-co/puddle/releases)
