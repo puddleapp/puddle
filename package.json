@@ -10,7 +10,13 @@
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder build -mwl",
-    "ship": "electron-builder build -mwl -p always -c electron-builder.yml"
+    "dist-mac": "electron-builder build --mac",
+    "dist-windows": "electron-builder build --windows",
+    "dist-linux": "electron-builder build --linux",
+    "ship": "electron-builder build -mwl -p always -c electron-builder.yml",
+    "ship-mac": "electron-builder build --mac -p always -c electron-builder.yml",
+    "ship-windows": "electron-builder build --windows -p always -c electron-builder.yml",
+    "ship-linux": "electron-builder build --linux -p always -c electron-builder.yml"
   },
   "devDependencies": {
     "electron": "^4.0.7",
