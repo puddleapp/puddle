@@ -16,7 +16,7 @@
     "ship": "electron-builder build -mwl -p always",
     "ship-mac": "electron-builder build --mac -p always",
     "ship-windows": "electron-builder build --windows -p always",
-    "ship-linux": "electron-builder build --linux -p always",
+    "ship-linux": "electron-builder build --linux -p always"
   },
   "devDependencies": {
     "electron": "^4.0.7",
