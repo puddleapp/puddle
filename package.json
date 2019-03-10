@@ -17,7 +17,6 @@
     "ship-mac": "electron-builder build --mac -p always",
     "ship-windows": "electron-builder build --windows -p always",
     "ship-linux": "electron-builder build --linux -p always",
-    "postinstall": "electron-builder install-app-deps"
   },
   "devDependencies": {
     "electron": "^4.0.7",
