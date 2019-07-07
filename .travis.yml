@@ -11,4 +11,4 @@ cache:
     - $HOME/.cache/electron-builder
 script:
   - |
-    npm install && npm run dist && npm run start
+    npm install && npm run dist && open Puddle
