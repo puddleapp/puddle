@@ -24,7 +24,8 @@
     "electron-builder": "^20.38.5"
   },
   "dependencies": {
-    "electron-updater": "^4.0.6"
+    "electron-updater": "^4.0.6",
+    "electron-is-dev": "^1.1.0"
   },
   "build": {
     "appId": "co.geschafft.puddle",
