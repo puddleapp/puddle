@@ -1,7 +1,8 @@
 const {app, BrowserWindow, protocol, ipcMain} = require("electron");
 const https = require("https");
-const vm = import("vm");
+const vm = require("vm");
 const {autoUpdater} = require("electron-updater");
+const isDev = require("electron-is-dev");
 let win;
 function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
@@ -21,7 +22,7 @@ app.on("ready", function() {
     });
     callback({path: "${__dirname}/opening.html"});
   });
-  autoUpdater.checkForUpdates();
+  if (isDev == false) {autoUpdater.checkForUpdates();}
 });
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
@@ -33,9 +34,11 @@ app.on("activate", () => {
     createWindow();
   }
 });
-autoUpdater.on("update-downloaded", (info) => {
-  win.webContents.send("updateReady");
-});
+if (isDev == false) {
+  autoUpdater.on("update-downloaded", (info) => {
+    win.webContents.send("updateReady");
+  });
+}
 ipcMain.on("quitAndInstall", (event, arg) => {
-  autoUpdater.quitAndInstall();
+  if (isDev == false) {autoUpdater.quitAndInstall();}
 });

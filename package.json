@@ -1,7 +1,7 @@
 {
   "name": "Puddle",
   "displayName": "Puddle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A web browser for full desktop apps.",
   "author": "Geschafft <hello@geschafft.co> (https://geschafft.co)",
   "repository": "https://github.com/geschafft-co/puddle",
@@ -16,12 +16,16 @@
     "ship": "electron-builder build -mwl -p always",
     "ship-mac": "electron-builder build --mac -p always",
     "ship-windows": "electron-builder build --windows -p always",
-    "ship-linux": "electron-builder build --linux -p always"
+    "ship-linux": "electron-builder build --linux -p always",
+    "postinstall": "electron-builder install-app-deps"
   },
   "devDependencies": {
     "electron": "^4.0.7",
-    "electron-builder": "^20.38.5",
-    "electron-updater": "^4.0.6"
+    "electron-builder": "^20.38.5"
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.6",
+    "electron-is-dev": "^1.1.0"
   },
   "build": {
     "appId": "co.geschafft.puddle",
