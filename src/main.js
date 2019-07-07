@@ -1,6 +1,6 @@
 const {app, BrowserWindow, protocol, ipcMain} = require("electron");
 const https = require("https");
-const vm = import("vm");
+const vm = require("vm");
 const {autoUpdater} = require("electron-updater");
 let win;
 function createWindow() {
