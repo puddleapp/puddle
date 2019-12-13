@@ -6,7 +6,7 @@ const isDev = require("electron-is-dev");
 let win;
 function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
-  win.loadFile("index.html");
+  win.loadFile("index.html", protocol: 'file:', slashes: true);
   win.on("closed", () => {
     win = null;
   });
