@@ -28,9 +28,9 @@
     "electron-is-dev": "^1.1.0"
   },
   "build": {
-    "appId": "co.geschafft.puddle",
+    "appId": "today.cedric.puddle",
     "productName": "Puddle",
-    "copyright": "© Geschafft",
+    "copyright": "© Cedric Kim",
     "mac": {
       "target": "dmg",
       "category": "public.app-category.productivity",
