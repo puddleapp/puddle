@@ -1,4 +1,4 @@
-appId: co.geschafft.puddle
+appId: today.cedric.puddle
 publish:
     provider: github
     token: ENTER GITHUB PERSONAL ACCESS TOKEN HERE
