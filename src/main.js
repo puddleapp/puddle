@@ -12,6 +12,10 @@ function createWindow() {
   win.on("closed", () => {
     win = null;
   });
+  win.webContents.on('crashed', () => {
+    win.destroy();
+    createWindow();
+  });
 }
 app.on("ready", function() {
   createWindow();
