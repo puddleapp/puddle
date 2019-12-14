@@ -44,3 +44,6 @@ if (isDev == false) {
 ipcMain.on("quitAndInstall", (event, arg) => {
   if (isDev == false) {autoUpdater.quitAndInstall();}
 });
+process.on('uncaughtException', (err) => {
+  console.log(err);
+});
