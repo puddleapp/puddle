@@ -3,8 +3,8 @@
   "displayName": "Puddle",
   "version": "0.1.3",
   "description": "A web browser for full desktop apps.",
-  "author": "Geschafft <hello@geschafft.co> (https://geschafft.co)",
-  "repository": "https://github.com/geschafft-co/puddle",
+  "author": "Cedric Kim <hello@cedric.today> (https://cedric.today/)",
+  "repository": "https://github.com/cedkim/puddle",
   "license": "MIT",
   "main": "src/main.js",
   "scripts": {
