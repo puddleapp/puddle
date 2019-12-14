@@ -1,4 +1,6 @@
 const {app, BrowserWindow, protocol, ipcMain} = require("electron");
+const path = require("path");
+const url = require("url")
 const https = require("https");
 const vm = require("vm");
 const {autoUpdater} = require("electron-updater");
@@ -6,7 +8,7 @@ const isDev = require("electron-is-dev");
 let win;
 function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
-  win.loadFile("index.html", protocol: 'file:', slashes: true);
+  win.loadFile(url.format([pathname: path.join(__dirname, "index.html"), protocol: 'file:', slashes: true]));
   win.on("closed", () => {
     win = null;
   });
