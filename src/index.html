@@ -43,20 +43,6 @@ function renderHits(content) {
     });
   });
 }
-document.getElementById("searchbar").addEventListener("input", function() {
-  helper.setQuery(document.querySelector(this).val());
-  helper.setQueryParameter("hitsPerPage", 20);
-});
-document.getElementById("loadmore").addEventListener("click", function() {
-  helper.nextPage();
-});
-ipcRenderer.on("updateReady", function(event, text) {
-  (document.getElementById("updater")).innerHTML = "<h1>Update Puddle</h1><p>A new version of Puddle is available.</p>";
-  
-});
-document.getElementById("updater").addEventListener("click", function() {
-  ipcRenderer.send("quitAndInstall");
-});
 helper.search();</script>
   </body>
 </html>
