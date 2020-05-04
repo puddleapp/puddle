@@ -24,7 +24,8 @@
     "electron-builder": "^21.2.0"
   },
   "dependencies": {
-    "electron-is-dev": "^1.1.0"
+    "electron-is-dev": "^1.1.0",
+    "update-electron-app": "^1.5.0"
   },
   "build": {
     "appId": "today.cedric.puddle",
