@@ -4,7 +4,7 @@
   "version": "0.1.3",
   "description": "A web browser for full desktop apps.",
   "author": "Cedric Kim <hello@cedric.today> (https://cedric.today/)",
-  "repository": "https://github.com/cedkim/puddle",
+  "repository": "https://github.com/puddleapp/puddle",
   "license": "MIT",
   "main": "src/main.js",
   "scripts": {
