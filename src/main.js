@@ -26,7 +26,6 @@ app.on("ready", function() {
     });
     callback({path: "${__dirname}/opening.html"});
   });
-  if (isDev == false) {autoUpdater.checkForUpdates();}
 });
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
