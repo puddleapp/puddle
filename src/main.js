@@ -6,7 +6,7 @@ const vm = require("vm");
 let win;
 function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
-  win.loadFile(url.format({pathname: path.join(__dirname, "index.html"), protocol: 'file:', slashes: true}));
+  win.loadFile(url.format({pathname: path.join(__dirname, "index.html"), protocol: 'file:', slashes: true, webPreferences: {webSecurity: false}}));
   win.on("closed", () => {
     win = null;
   });
