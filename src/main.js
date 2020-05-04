@@ -3,7 +3,6 @@ const path = require("path");
 const url = require("url")
 const https = require("https");
 const vm = require("vm");
-const isDev = require("electron-is-dev");
 let win;
 function createWindow() {
   win = new BrowserWindow({width: 800, height: 600});
@@ -39,14 +38,4 @@ app.on("activate", () => {
     createWindow();
   }
 });
-if (isDev == false) {
-  autoUpdater.on("update-downloaded", (info) => {
-    win.webContents.send("updateReady");
-  });
-}
-ipcMain.on("quitAndInstall", (event, arg) => {
-  if (isDev == false) {autoUpdater.quitAndInstall();}
-});
-process.on("uncaughtException", (err) => {
-  console.log(err);
-});
+require("update-electron-app")();
