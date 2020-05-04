@@ -1,9 +1,8 @@
-const {app, BrowserWindow, protocol, ipcMain} = require("electron");
+const {app, BrowserWindow, protocol, ipcMain, autoUpdater} = require("electron");
 const path = require("path");
 const url = require("url")
 const https = require("https");
 const vm = require("vm");
-const {autoUpdater} = require("electron-updater");
 const isDev = require("electron-is-dev");
 let win;
 function createWindow() {
@@ -48,6 +47,6 @@ if (isDev == false) {
 ipcMain.on("quitAndInstall", (event, arg) => {
   if (isDev == false) {autoUpdater.quitAndInstall();}
 });
-process.on('uncaughtException', (err) => {
+process.on("uncaughtException", (err) => {
   console.log(err);
 });
