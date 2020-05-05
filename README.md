@@ -8,7 +8,7 @@ If you need help or want to report a bug, please do not hesitate to get [support
 ## For developers
 A Puddle app consists of a single JavaScript file that can be run on Node.js. To create a functioning app, you may need to use a framework like [Electron](https://electronjs.org/). This JavaScript file must be hosted publicly in raw JavaScript format.
 ## Submit an app
-Do you own an app? Tell us [here](https://github.com/geschafft-co/puddle/issues/new). If you don't want to add your app to the Puddle library, you can use puddle://https:// or puddle://http:// to link to your app file.
+Do you own an app? Our approval system is open and inclusive, so don't hesitate to [request distribution of your app](https://github.com/puddleapp/puddle/issues/new?assignees=&labels=app-distribution&template=app-distribution-request.md&title=)! If you don't want to add your app to the Puddle library, you can use puddle://https:// or puddle://http:// to link to your app file.
 ## License
 Puddle is open source and is licensed under the MIT License.
 
